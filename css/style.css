@@ -354,4 +354,60 @@ template {
 [hidden] {
   display: none;
 }
+
+.navbar {
+  background-color: #fff;
+}
+
+.navbar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+.logo {
+  width: 177px;
+}
+
+.logo__img {
+  width: 100%;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.search__input {
+  width: 350px;
+  height: 40px;
+  padding-left: 23px;
+  padding-right: 75px;
+  border: none;
+  background-color: #F5FAFE;
+  font-size: 12px;
+  font-weight: 15px;
+  color: #333333;
+}
+
+.search__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 65px;
+  background-color: #EC1F46;
+  border: none;
+}
 /*# sourceMappingURL=style.css.map */
