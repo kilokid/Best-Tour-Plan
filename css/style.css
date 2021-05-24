@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Mulish', sans-serif;
+  color: #333333;
 }
 
 .container {
@@ -372,6 +373,11 @@ template {
   padding: 40px 0;
 }
 
+.navbar__search {
+  margin-left: 108px;
+  margin-right: auto;
+}
+
 .logo {
   width: 177px;
 }
@@ -405,9 +411,34 @@ template {
   position: absolute;
   top: 0;
   right: 0;
-  height: 40px;
+  height: 100%;
   width: 65px;
   background-color: #EC1F46;
   border: none;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.user__name {
+  font-size: 14px;
+  margin-left: 18px;
+  line-height: 18px;
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */
