@@ -441,12 +441,10 @@ template {
   line-height: 18px;
   color: #333333;
 }
+<<<<<<< Updated upstream
+=======
 
-.navbar-menu {
-  background-color: #0A223D;
-}
-
-.navbar-menu__links {
+.user__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,11 +459,12 @@ template {
   margin: 0;
 }
 
-.navbar-menu__link {
+.user__link {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
+>>>>>>> Stashed changes
 /*# sourceMappingURL=style.css.map */
