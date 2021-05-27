@@ -5,12 +5,12 @@
         width: 590px
     .swiper
         &-slide
-            &__img
+            &__image
                 width: 100%
                 height: 100%
                 object-fit: cover
 @media (max-width: 992px)
-    .container
+    .container, .newsletter-wrapper
         max-width: 700px
         .logo
             width: 132px
@@ -92,6 +92,12 @@
         width: 100%
     .map
         width: 100%
+    .newsletter
+        &-wrapper
+            flex-direction: column
+            align-items: flex-start
+            max-width: 576px
+            width: 92%
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -100,3 +106,9 @@
     .hotel
         &__slider
             margin-bottom: 20px
+    .newsletter
+        padding: 76px 0 83px 0
+        &__title
+            margin-bottom: 37px
+    .subscribe
+        width: 100%
