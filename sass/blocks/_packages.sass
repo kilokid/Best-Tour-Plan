@@ -1,0 +1,109 @@
+.packages
+    padding-top: 40px
+    padding-bottom: 70px
+    &-title
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        &__bottom
+            margin-bottom: 65px
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr,)
+        grid-template-rows: repeat(2, 1fr)
+    &__card
+        position: relative
+        max-width: 366px
+        max-height: 500px
+        background-color: $bgc-dark
+        color: $light
+        border-radius: 8px
+        overflow: hidden
+        &-grid
+            display: grid
+            justify-self: end
+        &-ml
+            margin-left: 20px
+        &-margin
+            margin-left: 30px
+            margin-bottom: 30px
+            &-left
+                margin-left: 30px
+        &-top
+            width: 100%
+        &-bottom
+            padding: 30px 21px 25px 32px
+    &-hotel
+        width: 100%
+        height: 500px
+        &__img
+            width: 100%
+            height: 250px
+    &__stars
+        margin-top: 47px
+    &__offer
+        position: absolute
+        left: 0
+        top: 26px
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        margin-top: 5px
+        margin-bottom: 27px
+    &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160.6%
+        margin-bottom: 34px
+    &__icon
+        margin-right: 15px
+    &__location
+        margin-bottom: 11px
+    &__guests
+        margin-bottom: 11px
+    &__room
+        margin-bottom: 37px
+        &-bottom
+            margin-bottom: 24px
+    &__description
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+    &__bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-price
+        display: flex
+        flex-direction: column
+    &__price-old
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+    &__price-new
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+    &-button
+        border: none
+        background-color: $primary
+        color: $light
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        padding: 11px 27px
+        border-radius: 4px
+        cursor: pointer
+    &-content
+        padding: 0 21px 0 43px

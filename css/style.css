@@ -793,6 +793,190 @@ template {
   overflow: hidden;
 }
 
+.packages {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.packages-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.packages-title__bottom {
+  margin-bottom: 65px;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.packages__card {
+  position: relative;
+  max-width: 366px;
+  max-height: 500px;
+  background-color: #0A223D;
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages__card-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.packages__card-ml {
+  margin-left: 20px;
+}
+
+.packages__card-margin {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.packages__card-margin-left {
+  margin-left: 30px;
+}
+
+.packages__card-top {
+  width: 100%;
+}
+
+.packages__card-bottom {
+  padding: 30px 21px 25px 32px;
+}
+
+.packages-hotel {
+  width: 100%;
+  height: 500px;
+}
+
+.packages-hotel__img {
+  width: 100%;
+  height: 250px;
+}
+
+.packages__stars {
+  margin-top: 47px;
+}
+
+.packages__offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+}
+
+.packages__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 5px;
+  margin-bottom: 27px;
+}
+
+.packages__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-bottom: 34px;
+}
+
+.packages__icon {
+  margin-right: 15px;
+}
+
+.packages__location {
+  margin-bottom: 11px;
+}
+
+.packages__guests {
+  margin-bottom: 11px;
+}
+
+.packages__room {
+  margin-bottom: 37px;
+}
+
+.packages__room-bottom {
+  margin-bottom: 24px;
+}
+
+.packages__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.packages__price-old {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.packages__price-new {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages-button {
+  border: none;
+  background-color: #EC1F46;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 11px 27px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.packages-content {
+  padding: 0 21px 0 43px;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1193,6 +1377,26 @@ template {
     width: 340px;
     height: 250px;
   }
+  .packages-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  .packages__card-ml {
+    margin-left: 0px;
+  }
+  .packages__card-margin {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .packages__card-margin-left {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1258,6 +1462,9 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .hotel {
+    padding-bottom: 30px;
+  }
   .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1313,6 +1520,33 @@ template {
   .card {
     width: 49%;
     height: 255px;
+  }
+  .packages {
+    padding-top: 20px;
+  }
+  .packages-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .packages__card {
+    margin: auto;
+  }
+  .packages__card-grid {
+    margin: auto;
+  }
+  .packages__card-ml {
+    margin: 0;
+  }
+  .packages-title {
+    font-size: 18px;
+  }
+  .packages-title__bottom {
+    margin-bottom: 30px;
   }
 }
 
