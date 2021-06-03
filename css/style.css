@@ -807,7 +807,7 @@ template {
   text-transform: uppercase;
 }
 
-.packages-title__bottom {
+.packages-title_bottom {
   margin-bottom: 65px;
 }
 
@@ -863,7 +863,7 @@ template {
   height: 500px;
 }
 
-.packages-hotel__img {
+.packages-hotel-img {
   width: 100%;
   height: 250px;
 }
@@ -1545,7 +1545,7 @@ template {
   .packages-title {
     font-size: 18px;
   }
-  .packages-title__bottom {
+  .packages-title_bottom {
     margin-bottom: 30px;
   }
 }
