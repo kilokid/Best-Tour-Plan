@@ -11,19 +11,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbar navbar_mobile_fixed">
         <div class="container">
             <div class="navbar-top">
                     <div class="logo">
                         <img src="img/Logo-horizon.svg" alt="Logo: Best Tour Plan" class="logo__img">
                     </div>
-                        <form action="#" class="search navbar__search">
+                        <form action="#" class="search navbar__search navbar__search_mobile_hidden">
                             <input type="text" class="search__input" placeholder="Search Location">
                             <button class="search__button">
                                 <img src="img/search.svg" alt="search__icon">
                             </button>
                         </form>
-                    <a href="#" class="user navbar__user">
+                    <a href="#" class="user navbar__user navbar__user_mobile_hidden">
                         <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
                         <span class="user__name">Nathan</span>
                     </a>
@@ -34,18 +34,33 @@
                     </button>
             </div>
         </div>
-        <div class="navbar-menu">
-            <div class="container">
-                <ul class="navbar-menu__links">
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
-                </ul>
-            </div>  
+        <div class="navbar-bottom">
+            <div class="navbar-menu">
+                <div class="container">
+                    <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+                        <a href="#" class="user navbar__user navbar__user_mobile_visible">
+                        <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+                        <span class="user__name user__name_light">Nathan</span></a>
+                    </li>
+                    <li class="navbar-menu__item navbar-menu__item_mobile_visible">                 
+                        <form action="#" class="search navbar__search navbar__search_mobile_visible">
+                            <input type="text" class="search__input" placeholder="Search Location">
+                            <button class="search__button">
+                                <img src="img/search.svg" alt="search__icon">
+                            </button>
+                        </form>
+                    </li>
+                    <ul class="navbar-menu__links">
+                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
+                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
+                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
+                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
+                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
+                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
+                        <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
+                    </ul>
+                </div>  
+            </div>
         </div>
     </header>
     <nav class="breadcrumb">
