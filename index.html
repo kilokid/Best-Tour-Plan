@@ -140,7 +140,7 @@
                                 <span class="booking__num">12100</span>
                             </a>
                         </div>
-                        <button class="button booking__button">View Other Options</button>
+                        <button data-toggle="modal" class="button booking__button">View Other Options</button>
                     </div>
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0412632673433!2d98.29255281471126!3d7.890752094315367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1622128744471!5m2!1sru!2sru" width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -464,10 +464,10 @@
                 </div>
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title_mb-3">Send us a message</h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <form action="send.php" method="POST" class="footer__form">
+                        <input type="text" class="input footer__input" placeholder="Your Full Name*" name='nsme'>
+                        <input type="text" class="input footer__input" placeholder="Phone Number*" name='phone'>
+                        <textarea class="message footer__message" placeholder="Message" name='message'></textarea>
                         <button class="button footer__button">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -475,6 +475,24 @@
             </div>
         </div>
     </div>
+    <div class="modal">
+        <div class="modal__owerlay"></div>
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="Icon: close">
+            </a>
+            <h3 class="modal__title modal__title_mb-3">Send us a message</h3>
+            <form action="#" class="modal__form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name='name'>
+                <input type="text" class="input modal__input" placeholder="Phone Number*" name='phone'>
+                <input type="text" class="input modal__input" placeholder="Email*" name='email'>
+                <textarea class="message modal__message" placeholder="Message" name='message'></textarea>
+                <button class="button modal__button">Send</button>
+                <span class="modal__info">* Required Fields</span>
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
