@@ -53,4 +53,5 @@ menuButton.on('click', function () {
     modalOwerLay.removeClass('modal__owerlay_visible');
     modalDialog.removeClass('modal__dialog_visible');
   }
+  AOS.init();
 });
